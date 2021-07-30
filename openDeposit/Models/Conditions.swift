@@ -16,7 +16,7 @@ struct Offer {
     let isReplenishable: Type
     let isProlongation: Type
     let isCapitalization: Type
-    let conditions: [Conditions]
+    let conditions: [Condition]
 }
 
 struct Condition {
