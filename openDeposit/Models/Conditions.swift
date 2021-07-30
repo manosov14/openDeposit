@@ -19,7 +19,7 @@ struct Offer {
     let conditions: [Conditions]
 }
 
-struct Conditions {
+struct Condition {
     let sumFrom: Int
     let sumTo: Int
     let interest: Int
@@ -47,15 +47,15 @@ extension Deposit {
                         code: true,
                         name: "Капитализация"),
                     conditions: [
-                        Conditions(
+                        Condition(
                             sumFrom: 15000,
                             sumTo: 300000,
                             interest: 5),
-                        Conditions(
+                        Condition(
                             sumFrom: 300000,
                             sumTo: 1000000,
                             interest: 6),
-                        Conditions(
+                        Condition(
                             sumFrom: 1000000,
                             sumTo: 999999999,
                             interest: 7)
