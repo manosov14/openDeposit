@@ -18,6 +18,7 @@
 		875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1426B3D2F800B41A3D /* Conditions.swift */; };
 		875CEE1726B4269400B41A3D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1626B4269400B41A3D /* Currency.swift */; };
 		875CEE1926B4280700B41A3D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1826B4280700B41A3D /* Type.swift */; };
+		D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDB26B469D7009900E3 /* testForGit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		875CEE1426B3D2F800B41A3D /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		875CEE1626B4269400B41A3D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		875CEE1826B4280700B41A3D /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		D6DA4BDB26B469D7009900E3 /* testForGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForGit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		875CEDEB26B3CDF700B41A3D = {
 			isa = PBXGroup;
 			children = (
+				D6DA4BDB26B469D7009900E3 /* testForGit.swift */,
 				875CEDF626B3CDF700B41A3D /* openDeposit */,
 				875CEDF526B3CDF700B41A3D /* Products */,
 			);
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */,
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
 				875CEE1326B3CF4F00B41A3D /* Product.swift in Sources */,
