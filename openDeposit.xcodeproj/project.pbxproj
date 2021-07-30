@@ -13,6 +13,11 @@
 		875CEDFF26B3CDF700B41A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875CEDFD26B3CDF700B41A3D /* Main.storyboard */; };
 		875CEE0126B3CDF900B41A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875CEE0026B3CDF900B41A3D /* Assets.xcassets */; };
 		875CEE0426B3CDF900B41A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */; };
+		875CEE1126B3CF1E00B41A3D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1026B3CF1E00B41A3D /* Client.swift */; };
+		875CEE1326B3CF4F00B41A3D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1226B3CF4F00B41A3D /* Product.swift */; };
+		875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1426B3D2F800B41A3D /* Conditions.swift */; };
+		875CEE1726B4269400B41A3D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1626B4269400B41A3D /* Currency.swift */; };
+		875CEE1926B4280700B41A3D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1826B4280700B41A3D /* Type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		875CEE0026B3CDF900B41A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		875CEE0326B3CDF900B41A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		875CEE0526B3CDF900B41A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875CEE1026B3CF1E00B41A3D /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		875CEE1226B3CF4F00B41A3D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		875CEE1426B3D2F800B41A3D /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
+		875CEE1626B4269400B41A3D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		875CEE1826B4280700B41A3D /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		875CEDF626B3CDF700B41A3D /* openDeposit */ = {
 			isa = PBXGroup;
 			children = (
-				875CEDF726B3CDF700B41A3D /* AppDelegate.swift */,
-				875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */,
-				875CEDFB26B3CDF700B41A3D /* ViewController.swift */,
-				875CEDFD26B3CDF700B41A3D /* Main.storyboard */,
-				875CEE0026B3CDF900B41A3D /* Assets.xcassets */,
-				875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */,
-				875CEE0526B3CDF900B41A3D /* Info.plist */,
+				875CEE0B26B3CE0000B41A3D /* Models */,
+				875CEE0F26B3CE6600B41A3D /* Supporting Files */,
+				875CEE0E26B3CE2D00B41A3D /* Resources */,
+				875CEE0D26B3CE2100B41A3D /* Storyboards */,
+				875CEE0C26B3CE1400B41A3D /* View Controllers */,
 			);
 			path = openDeposit;
+			sourceTree = "<group>";
+		};
+		875CEE0B26B3CE0000B41A3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				875CEE1026B3CF1E00B41A3D /* Client.swift */,
+				875CEE1426B3D2F800B41A3D /* Conditions.swift */,
+				875CEE1226B3CF4F00B41A3D /* Product.swift */,
+				875CEE1626B4269400B41A3D /* Currency.swift */,
+				875CEE1826B4280700B41A3D /* Type.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		875CEE0C26B3CE1400B41A3D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				875CEDFB26B3CDF700B41A3D /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		875CEE0D26B3CE2100B41A3D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */,
+				875CEDFD26B3CDF700B41A3D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		875CEE0E26B3CE2D00B41A3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				875CEE0026B3CDF900B41A3D /* Assets.xcassets */,
+				875CEE0526B3CDF900B41A3D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		875CEE0F26B3CE6600B41A3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				875CEDF726B3CDF700B41A3D /* AppDelegate.swift */,
+				875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +194,12 @@
 			files = (
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
+				875CEE1326B3CF4F00B41A3D /* Product.swift in Sources */,
+				875CEE1126B3CF1E00B41A3D /* Client.swift in Sources */,
 				875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */,
+				875CEE1726B4269400B41A3D /* Currency.swift in Sources */,
+				875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */,
+				875CEE1926B4280700B41A3D /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = openDeposit/Info.plist;
+				INFOPLIST_FILE = openDeposit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = openDeposit/Info.plist;
+				INFOPLIST_FILE = openDeposit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
