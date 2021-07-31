@@ -74,9 +74,11 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         var content = cell.defaultContentConfiguration()
         
+        
         switch indexPath.row {
         case 0:
             content.text = Deposit.offer.offerName
+            content.secondaryText = "Название вклада"
             cell.contentConfiguration = content
             return cell
         case 1:
@@ -107,6 +109,10 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 
     
     
@@ -131,7 +137,8 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     private func createTable() {
         
         //Добавляю таблицу (Можно констрейнты прибить по нулям, но данный способ проще)
-        depositSettingsTableView = UITableView(frame: view.bounds, style: .insetGrouped)
+        depositSettingsTableView = UITableView(frame: view.bounds, style: .grouped)
+        depositSettingsTableView.backgroundColor = .white
         depositSettingsTableView.delegate = self
         depositSettingsTableView.dataSource = self
         
