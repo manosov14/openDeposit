@@ -11,6 +11,7 @@ struct Deposit {
 
 struct Offer {
     let offerName: String
+    let offerId: String
     let maxPercentRate: Int
     let minTerm: Int
     let currency: Currency
@@ -36,6 +37,7 @@ extension Deposit {
             offers: [
                 Offer(
                     offerName: "Вклад накопительный",
+                    offerId: "DEPOZ_NAKOP",
                     maxPercentRate: 6,
                     minTerm: 367,
                     currency: Currency(
