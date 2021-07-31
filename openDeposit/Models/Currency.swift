@@ -7,5 +7,5 @@
 
 struct Currency {
     let code: Int
-    let charCode: Character
+    let charCode: String
 }

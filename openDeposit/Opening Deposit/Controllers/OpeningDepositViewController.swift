@@ -15,6 +15,7 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     //Создаю таблицу
     private var depositSettingsTableView = UITableView()
     private let cellID = "defaultCell"
+    private let depositAmount = 0
     
     
     //Создаю кнопку и инкапсулирую ее внутренности
@@ -23,11 +24,11 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         let continueButton = UIButton(type: .roundedRect)
         
         continueButton.translatesAutoresizingMaskIntoConstraints = false
-        continueButton.backgroundColor = .blue
+        continueButton.backgroundColor = #colorLiteral(red: 0, green: 0.4509803922, blue: 1, alpha: 1)
         continueButton.titleLabel?.text = "Продолжить"
         continueButton.setTitle("Продолжить", for: .normal)
         continueButton.setTitleColor(.white, for: .normal)
-        continueButton.layer.cornerRadius = 4
+        continueButton.layer.cornerRadius = 10
         
         return continueButton
     }()
@@ -45,6 +46,7 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         
         //Устанавливаю созданные ниже констрейнты для кнопки
         addconstraints()
+        
 
     }
     
@@ -59,14 +61,55 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 3 {
+            let customCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
+            
+            customCell.confugure(value: 30, text: "дней")
+            
+            
+            return customCell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        cell.textLabel?.text = "\(indexPath.section)"
-        return cell
+        var content = cell.defaultContentConfiguration()
+        
+        switch indexPath.row {
+        case 0:
+            content.text = Deposit.offer.offerName
+            cell.contentConfiguration = content
+            return cell
+        case 1:
+            content.text = Deposit.offer.currency.charCode
+            content.secondaryText = "Валюта"
+            cell.contentConfiguration = content
+            return cell
+        case 2:
+            content.text = "\(Deposit.offer.conditions[0].sumTo)"
+            content.secondaryText = "Сумма вклада"
+            cell.contentConfiguration = content
+            return cell
+        default:
+            content.text = "\(Deposit.offer.conditions[0].interest)"
+            content.secondaryText = "Процентная ставка"
+            cell.contentConfiguration = content
+            return cell
+        }
+
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        60
+        if indexPath.row != 3 {
+            return 60
+        } else {
+            return 100
+        }
     }
+    
+
+    
+    
     
     //MARK: - Private methods
     
@@ -76,8 +119,8 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         
         //Добавление констрейнтов для кнопки
         
-        constraints.append(continueButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16))
-        constraints.append(continueButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16))
+        constraints.append(continueButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20))
+        constraints.append(continueButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20))
         constraints.append(continueButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -44))
         constraints.append(continueButton.heightAnchor.constraint(equalToConstant: 60))
         
@@ -88,9 +131,12 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     private func createTable() {
         
         //Добавляю таблицу (Можно констрейнты прибить по нулям, но данный способ проще)
-        depositSettingsTableView = UITableView(frame: view.bounds, style: .grouped)
+        depositSettingsTableView = UITableView(frame: view.bounds, style: .insetGrouped)
         depositSettingsTableView.delegate = self
         depositSettingsTableView.dataSource = self
+        
+        //подключаю свой xib
+        depositSettingsTableView.register(MyTableViewCell.nib(), forCellReuseIdentifier: MyTableViewCell.identifier)
         
         //Маски (они растягивают таблицу)
         depositSettingsTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

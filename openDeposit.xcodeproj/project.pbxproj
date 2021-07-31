@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */; };
 		5A38369726B575FB007EFB0C /* OpeningDepositViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */; };
+		5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */; };
+		5A38369B26B5A2D9007EFB0C /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */; };
 		875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDF726B3CDF700B41A3D /* AppDelegate.swift */; };
 		875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */; };
 		875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDFB26B3CDF700B41A3D /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDepositViewController.swift; sourceTree = "<group>"; };
 		5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OpeningDepositViewController.storyboard; sourceTree = "<group>"; };
+		5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		875CEDF426B3CDF700B41A3D /* openDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875CEDF726B3CDF700B41A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */,
+				5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */,
+				5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A38369B26B5A2D9007EFB0C /* MyTableViewCell.xib in Resources */,
 				875CEE0426B3CDF900B41A3D /* LaunchScreen.storyboard in Resources */,
 				5A38369726B575FB007EFB0C /* OpeningDepositViewController.storyboard in Resources */,
 				875CEE0126B3CDF900B41A3D /* Assets.xcassets in Resources */,
@@ -234,6 +241,7 @@
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
 				875CEE1326B3CF4F00B41A3D /* Product.swift in Sources */,
+				5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */,
 				875CEE1126B3CF1E00B41A3D /* Client.swift in Sources */,
 				875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */,
 				875CEE1726B4269400B41A3D /* Currency.swift in Sources */,
