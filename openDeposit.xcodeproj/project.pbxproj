@@ -12,6 +12,7 @@
 		870DE3AE26B52EA70068AA11 /* ConfirmConditions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870DE3AD26B52EA70068AA11 /* ConfirmConditions.storyboard */; };
 		870DE3B026B52ED80068AA11 /* ConfirmOtp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870DE3AF26B52ED80068AA11 /* ConfirmOtp.storyboard */; };
 		870DE3B226B52EFB0068AA11 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870DE3B126B52EFB0068AA11 /* Status.storyboard */; };
+		8751793D26B53B2F0060DFC3 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751793C26B53B2F0060DFC3 /* Client.swift */; };
 		875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDF726B3CDF700B41A3D /* AppDelegate.swift */; };
 		875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */; };
 		875CEDFF26B3CDF700B41A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875CEDFD26B3CDF700B41A3D /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		870DE3AD26B52EA70068AA11 /* ConfirmConditions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmConditions.storyboard; sourceTree = "<group>"; };
 		870DE3AF26B52ED80068AA11 /* ConfirmOtp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmOtp.storyboard; sourceTree = "<group>"; };
 		870DE3B126B52EFB0068AA11 /* Status.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Status.storyboard; sourceTree = "<group>"; };
+		8751793C26B53B2F0060DFC3 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		875CEDF426B3CDF700B41A3D /* openDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875CEDF726B3CDF700B41A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		875CEE0B26B3CE0000B41A3D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8751793C26B53B2F0060DFC3 /* Client.swift */,
 				875CEE1426B3D2F800B41A3D /* Deposit.swift */,
 				875CEE1626B4269400B41A3D /* Currency.swift */,
 				875CEE1826B4280700B41A3D /* Type.swift */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
+				8751793D26B53B2F0060DFC3 /* Client.swift in Sources */,
 				875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */,
 				875CEE1726B4269400B41A3D /* Currency.swift in Sources */,
 				875CEE1F26B4882A00B41A3D /* SelectProducViewController.swift in Sources */,
