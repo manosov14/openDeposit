@@ -11,17 +11,22 @@ struct Deposit {
 
 struct Offer {
     let offerName: String
+    let maxPercentRate: Int
+    let minTerm: Int
     let currency: Currency
     let isWithdrawal: Type
     let isReplenishable: Type
     let isProlongation: Type
     let isCapitalization: Type
+    let percentPayOut: String
     let conditions: [Condition]
 }
 
 struct Condition {
     let sumFrom: Int
     let sumTo: Int
+    let minTerm: Int
+    let maxTerm: Int
     let interest: Int
 }
 
@@ -31,6 +36,8 @@ extension Deposit {
             offers: [
                 Offer(
                     offerName: "Вклад накопительный",
+                    maxPercentRate: 6,
+                    minTerm: 367,
                     currency: Currency(
                         code: 810,
                         charCode: "₱"),
@@ -46,19 +53,26 @@ extension Deposit {
                     isCapitalization: Type(
                         code: true,
                         name: "Капитализация"),
+                    percentPayOut: "В конце срока",
                     conditions: [
                         Condition(
                             sumFrom: 15000,
                             sumTo: 300000,
+                            minTerm: 91,
+                            maxTerm: 365,
                             interest: 5),
                         Condition(
                             sumFrom: 300000,
                             sumTo: 1000000,
-                            interest: 6),
+                            minTerm: 366,
+                            maxTerm: 900,
+                            interest: 7),
                         Condition(
                             sumFrom: 1000000,
                             sumTo: 999999999,
-                            interest: 7)
+                            minTerm: 901,
+                            maxTerm: 1097,
+                            interest: 9)
                     ]
                 )
             ]
