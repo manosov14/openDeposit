@@ -9,9 +9,6 @@ import UIKit
 
 class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    static var opeDepVC = OpeningDepositViewController()
-    
     //MARK: - Private properties
     
     //Создаю таблицу
@@ -56,8 +53,7 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         guard let dvc = segue.destination as? ConfirmationViewController else { return }
         dvc.nameOfDeposit = "\(Deposit.offer.offerName)"
         dvc.currency = "\(Deposit.offer.currency.charCode)"
-        dvc.sumOfDeposit = FieldTableViewCell.myFieldcell.textForDrop
-        dvc.depositTerb = MyTableViewCell.tableCell.textForDrop
+
         dvc.procent = "5"
     }
     

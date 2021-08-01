@@ -11,10 +11,9 @@ class ConfirmationViewController: UIViewController, UITableViewDelegate, UITable
     
     var nameOfDeposit: String!
     var currency: String!
-    var sumOfDeposit: String!
-    var depositTerb: String!
+    var sumOfDeposit = FieldTableViewCell.myFieldcell.textForDrop
+    var depositTerb = MyTableViewCell.tableCell.textForDrop
     var procent: String!
-    
     
     var tableView = UITableView()
     

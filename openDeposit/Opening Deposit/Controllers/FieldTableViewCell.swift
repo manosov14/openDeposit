@@ -16,7 +16,7 @@ class FieldTableViewCell: UITableViewCell, UITextFieldDelegate {
         return UINib(nibName: "FieldTableViewCell", bundle: nil)
     }
     
-    var textForDrop = "Not Found"
+    var textForDrop = "NF"
     
     @IBOutlet var field: UITextField!
 
@@ -29,12 +29,11 @@ class FieldTableViewCell: UITableViewCell, UITextFieldDelegate {
         field.keyboardType = .numberPad
         field.keyboardAppearance = .light
         
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if Int(textField.text!) != nil {
-            textForDrop = textField.text!
+            textForDrop = textField.text ?? "хуй"
         } else {
             textField.text = ""
             textField.attributedPlaceholder = NSAttributedString(string: "Введите целое число!", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
