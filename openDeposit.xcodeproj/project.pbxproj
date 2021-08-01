@@ -25,8 +25,6 @@
 		875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1426B3D2F800B41A3D /* Conditions.swift */; };
 		875CEE1726B4269400B41A3D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1626B4269400B41A3D /* Currency.swift */; };
 		875CEE1926B4280700B41A3D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1826B4280700B41A3D /* Type.swift */; };
-		D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDB26B469D7009900E3 /* testForGit.swift */; };
-		D6DA4BDE26B46ABE009900E3 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDD26B46ABE009900E3 /* test2.swift */; };
 		D6DA4C3526B710A8009900E3 /* ConfirmOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4C3426B710A8009900E3 /* ConfirmOtpViewController.swift */; };
 		D6DA4C3826B714B0009900E3 /* ConfirmOtp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4C3726B714B0009900E3 /* ConfirmOtp.storyboard */; };
 /* End PBXBuildFile section */
@@ -52,8 +50,6 @@
 		875CEE1426B3D2F800B41A3D /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		875CEE1626B4269400B41A3D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		875CEE1826B4280700B41A3D /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
-		D6DA4BDB26B469D7009900E3 /* testForGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForGit.swift; sourceTree = "<group>"; };
-		D6DA4BDD26B46ABE009900E3 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
 		D6DA4C3426B710A8009900E3 /* ConfirmOtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpViewController.swift; sourceTree = "<group>"; };
 		D6DA4C3726B714B0009900E3 /* ConfirmOtp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConfirmOtp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +107,6 @@
 		875CEDEB26B3CDF700B41A3D = {
 			isa = PBXGroup;
 			children = (
-				D6DA4BDB26B469D7009900E3 /* testForGit.swift */,
 				875CEDF626B3CDF700B41A3D /* openDeposit */,
 				875CEDF526B3CDF700B41A3D /* Products */,
 			);
@@ -134,7 +129,6 @@
 				875CEE0E26B3CE2D00B41A3D /* Resources */,
 				875CEE0D26B3CE2100B41A3D /* Storyboards */,
 				875CEE0C26B3CE1400B41A3D /* View Controllers */,
-				D6DA4BDD26B46ABE009900E3 /* test2.swift */,
 			);
 			path = openDeposit;
 			sourceTree = "<group>";
@@ -272,7 +266,6 @@
 				5A286F2D26B6CD230087EF9D /* ConfirmationViewController.swift in Sources */,
 				D6DA4C3526B710A8009900E3 /* ConfirmOtpViewController.swift in Sources */,
 				5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */,
-				D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */,
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
 				5A286F2726B67FD20087EF9D /* FieldTableViewCell.swift in Sources */,
@@ -282,7 +275,6 @@
 				875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */,
 				875CEE1726B4269400B41A3D /* Currency.swift in Sources */,
 				875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */,
-				D6DA4BDE26B46ABE009900E3 /* test2.swift in Sources */,
 				875CEE1926B4280700B41A3D /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMh-x1-iUf">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Confirm Otp View Controller-->
+        <scene sceneID="5yA-rP-5mK">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmOtp" id="rMh-x1-iUf" customClass="ConfirmOtpViewController" customModule="openDeposit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wuG-He-GoO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код из СМС" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2u-qQ-uIE">
+                                <rect key="frame" x="63.5" y="48" width="193" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мы отправили его на номер" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ih-yc-w2u">
+                                <rect key="frame" x="67" y="87" width="186.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your SMS code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QgP-Yf-znB">
+                                <rect key="frame" x="78" y="165" width="164" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7999****211" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7g-Hc-2UB">
+                                <rect key="frame" x="116.5" y="116" width="87.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOq-nr-cpH">
+                                <rect key="frame" x="96" y="219" width="128" height="30"/>
+                                <state key="normal" title="Код не приходит?"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отправить код снова через 01:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQP-A5-E6f">
+                                <rect key="frame" x="61" y="269" width="198" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DXO-0e-Jv5">
+                                <rect key="frame" x="150" y="300.5" width="20" height="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pv-Ro-Uwz">
+                                <rect key="frame" x="16" y="20" width="71" height="22"/>
+                                <state key="normal" title="Button" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="rMh-x1-iUf" eventType="touchUpInside" id="vmN-8y-g8w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8IZ-x3-b5Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DXO-0e-Jv5" firstAttribute="top" secondItem="kQP-A5-E6f" secondAttribute="bottom" constant="16" id="26h-AB-bW9"/>
+                            <constraint firstItem="QgP-Yf-znB" firstAttribute="top" secondItem="h7g-Hc-2UB" secondAttribute="bottom" constant="32" id="4K8-pC-RnH"/>
+                            <constraint firstItem="H2u-qQ-uIE" firstAttribute="top" secondItem="8IZ-x3-b5Z" secondAttribute="top" constant="48" id="CyQ-nE-Onu"/>
+                            <constraint firstItem="h7g-Hc-2UB" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="HoI-IO-VAe"/>
+                            <constraint firstItem="8ih-yc-w2u" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="IK3-7f-kUg"/>
+                            <constraint firstItem="8ih-yc-w2u" firstAttribute="top" secondItem="H2u-qQ-uIE" secondAttribute="bottom" constant="16" id="QR0-nw-FlG"/>
+                            <constraint firstItem="0Pv-Ro-Uwz" firstAttribute="leading" secondItem="8IZ-x3-b5Z" secondAttribute="leading" constant="16" id="R8L-40-gy5"/>
+                            <constraint firstItem="h7g-Hc-2UB" firstAttribute="top" secondItem="8ih-yc-w2u" secondAttribute="bottom" constant="12" id="WmX-1N-DfX"/>
+                            <constraint firstItem="kQP-A5-E6f" firstAttribute="top" secondItem="IOq-nr-cpH" secondAttribute="bottom" constant="20" id="Z7y-53-Jzw"/>
+                            <constraint firstItem="DXO-0e-Jv5" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="ecw-Lg-YgE"/>
+                            <constraint firstItem="0Pv-Ro-Uwz" firstAttribute="top" secondItem="8IZ-x3-b5Z" secondAttribute="top" constant="20" id="iWM-YA-AyN"/>
+                            <constraint firstItem="H2u-qQ-uIE" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="ivG-kp-WKi"/>
+                            <constraint firstItem="IOq-nr-cpH" firstAttribute="top" secondItem="QgP-Yf-znB" secondAttribute="bottom" constant="20" id="oNb-n7-ogE"/>
+                            <constraint firstItem="QgP-Yf-znB" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="rGD-xm-k8e"/>
+                            <constraint firstItem="kQP-A5-E6f" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="rtw-TM-3mW"/>
+                            <constraint firstItem="IOq-nr-cpH" firstAttribute="centerX" secondItem="wuG-He-GoO" secondAttribute="centerX" id="tLS-SP-C17"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yv9-On-WBe"/>
+                    <connections>
+                        <outlet property="textFieldOutlet" destination="QgP-Yf-znB" id="EjQ-Dy-fXv"/>
+                        <outlet property="timerLable" destination="kQP-A5-E6f" id="fGl-9N-AVj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqH-zM-F9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341.875" y="87.676056338028175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="timer" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

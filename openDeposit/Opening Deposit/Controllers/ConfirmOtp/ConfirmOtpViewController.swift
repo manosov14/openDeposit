@@ -19,7 +19,7 @@ class ConfirmOtpViewController: UIViewController {
 	
 	private var timer: Timer?
 	
-	private var countDown = 59
+	private var countDown = 4
 	
 	
 	// MARK: - Life Cycle Methods
