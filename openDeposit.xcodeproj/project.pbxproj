@@ -20,6 +20,8 @@
 		875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1426B3D2F800B41A3D /* Conditions.swift */; };
 		875CEE1726B4269400B41A3D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1626B4269400B41A3D /* Currency.swift */; };
 		875CEE1926B4280700B41A3D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1826B4280700B41A3D /* Type.swift */; };
+		8770EFE826B68FDA00B8F9FF /* SelectProducViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8770EFE726B68FDA00B8F9FF /* SelectProducViewController.swift */; };
+		8770EFEC26B6908900B8F9FF /* SelectProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8770EFEB26B6908900B8F9FF /* SelectProduct.storyboard */; };
 		87915A8326B680F2008575C8 /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87915A8226B680F2008575C8 /* Conditions.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		875CEE1426B3D2F800B41A3D /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		875CEE1626B4269400B41A3D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		875CEE1826B4280700B41A3D /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		8770EFE726B68FDA00B8F9FF /* SelectProducViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectProducViewController.swift; sourceTree = "<group>"; };
+		8770EFEB26B6908900B8F9FF /* SelectProduct.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectProduct.storyboard; sourceTree = "<group>"; };
 		87915A8226B680F2008575C8 /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +100,7 @@
 		875CEE0C26B3CE1400B41A3D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8770EFE126B68BD100B8F9FF /* SelectProduct */,
+				8770EFE626B68F6C00B8F9FF /* SelectProduct */,
 				87915A8026B67C16008575C8 /* InputConditions */,
 			);
 			path = "View Controllers";
@@ -107,7 +111,7 @@
 			children = (
 				875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */,
 				875CEDFD26B3CDF700B41A3D /* Main.storyboard */,
-				8770EFE226B68C0B00B8F9FF /* SelectProduct */,
+				8770EFE526B68F5F00B8F9FF /* SelectProduct */,
 				87915A8126B67C42008575C8 /* InputConditions */,
 			);
 			path = Storyboards;
@@ -131,16 +135,18 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8770EFE126B68BD100B8F9FF /* SelectProduct */ = {
+		8770EFE526B68F5F00B8F9FF /* SelectProduct */ = {
 			isa = PBXGroup;
 			children = (
+				8770EFEB26B6908900B8F9FF /* SelectProduct.storyboard */,
 			);
 			path = SelectProduct;
 			sourceTree = "<group>";
 		};
-		8770EFE226B68C0B00B8F9FF /* SelectProduct */ = {
+		8770EFE626B68F6C00B8F9FF /* SelectProduct */ = {
 			isa = PBXGroup;
 			children = (
+				8770EFE726B68FDA00B8F9FF /* SelectProducViewController.swift */,
 			);
 			path = SelectProduct;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				875CEE0426B3CDF900B41A3D /* LaunchScreen.storyboard in Resources */,
 				5A38369726B575FB007EFB0C /* OpeningDepositViewController.storyboard in Resources */,
 				875CEE0126B3CDF900B41A3D /* Assets.xcassets in Resources */,
+				8770EFEC26B6908900B8F9FF /* SelectProduct.storyboard in Resources */,
 				875CEDFF26B3CDF700B41A3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8770EFE826B68FDA00B8F9FF /* SelectProducViewController.swift in Sources */,
 				5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
 				5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */,
