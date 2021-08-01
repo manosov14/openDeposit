@@ -9,12 +9,14 @@ import UIKit
 
 class FieldTableViewCell: UITableViewCell, UITextFieldDelegate {
     
+    static let myFieldcell = FieldTableViewCell()
+    
     static let identifier = "FieldTableViewCell"
     static func nib() -> UINib {
         return UINib(nibName: "FieldTableViewCell", bundle: nil)
     }
     
-    
+    var textForDrop = "Not Found"
     
     @IBOutlet var field: UITextField!
 
@@ -32,7 +34,7 @@ class FieldTableViewCell: UITableViewCell, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if Int(textField.text!) != nil {
-            
+            textForDrop = textField.text!
         } else {
             textField.text = ""
             textField.attributedPlaceholder = NSAttributedString(string: "Введите целое число!", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])

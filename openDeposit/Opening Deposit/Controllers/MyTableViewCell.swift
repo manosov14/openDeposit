@@ -9,6 +9,10 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
     
+    static let tableCell = MyTableViewCell()
+    
+    var textForDrop = "Not Found"
+    
     static let identifier = "MyTableViewCell"
     static func nib() -> UINib {
         return UINib(nibName: "MyTableViewCell", bundle: nil)
@@ -32,13 +36,10 @@ class MyTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     
     @IBAction func changeValue(sender: UISlider) {
         
@@ -64,9 +65,8 @@ class MyTableViewCell: UITableViewCell {
             }
             result.removeLast()
         }
-            
-        
         myLabel.text = "\(Int(sender.value)) \(daysFormat)"
+        textForDrop = myLabel.text ?? "Not Found"
     }
     
 }

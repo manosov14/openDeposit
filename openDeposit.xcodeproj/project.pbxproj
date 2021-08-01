@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A286F2726B67FD20087EF9D /* FieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A286F2526B67FD20087EF9D /* FieldTableViewCell.swift */; };
 		5A286F2826B67FD20087EF9D /* FieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A286F2626B67FD20087EF9D /* FieldTableViewCell.xib */; };
+		5A286F2D26B6CD230087EF9D /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A286F2C26B6CD230087EF9D /* ConfirmationViewController.swift */; };
 		5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */; };
 		5A38369726B575FB007EFB0C /* OpeningDepositViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */; };
 		5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		5A286F2526B67FD20087EF9D /* FieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTableViewCell.swift; sourceTree = "<group>"; };
 		5A286F2626B67FD20087EF9D /* FieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldTableViewCell.xib; sourceTree = "<group>"; };
+		5A286F2C26B6CD230087EF9D /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDepositViewController.swift; sourceTree = "<group>"; };
 		5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OpeningDepositViewController.storyboard; sourceTree = "<group>"; };
 		5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A286F2926B6CBF90087EF9D /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				5A286F2C26B6CD230087EF9D /* ConfirmationViewController.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
 		5A38368E26B559DA007EFB0C /* Opening Deposit */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		5A38369126B55B01007EFB0C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A286F2926B6CBF90087EF9D /* Confirmation */,
 				5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */,
 				5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */,
 				5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */,
@@ -243,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A286F2D26B6CD230087EF9D /* ConfirmationViewController.swift in Sources */,
 				5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */,
 				D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */,
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,

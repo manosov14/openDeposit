@@ -10,14 +10,14 @@ import UIKit
 class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    static var opeDepVC = OpeningDepositViewController()
+    
     //MARK: - Private properties
     
     //Создаю таблицу
     private var depositSettingsTableView = UITableView()
     private let cellID = "defaultCell"
     private let depositAmount = 0
-    
-    
     
     
     //Создаю кнопку и инкапсулирую ее внутренности
@@ -49,12 +49,23 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         //Устанавливаю созданные ниже констрейнты для кнопки
         addconstraints()
         
-        
+        continueButton.addTarget(self, action: #selector(buttonIsTapped(sender:)), for: .touchUpInside)
         }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let dvc = segue.destination as? ConfirmationViewController else { return }
+        dvc.nameOfDeposit = "\(Deposit.offer.offerName)"
+        dvc.currency = "\(Deposit.offer.currency.charCode)"
+        dvc.sumOfDeposit = FieldTableViewCell.myFieldcell.textForDrop
+        dvc.depositTerb = MyTableViewCell.tableCell.textForDrop
+        dvc.procent = "5"
+    }
     
     //MARK:- Public methods
+    
+    @objc func buttonIsTapped(sender: UIButton) {
+        performSegue(withIdentifier: "detailSegue", sender: nil)
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         1
@@ -75,6 +86,7 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
             
             let customCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
             customCell.confugure(value: 30, text: "дней")
+            
             return customCell
             
         }
@@ -103,7 +115,6 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
 
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row != 3 {
             return 60
@@ -119,7 +130,7 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     
     //MARK: - Private methods
     
-    //Расставляю ее констрейнты
+    //Расставляю констрейнты кнопки
     private func addconstraints () {
         var constraints = [NSLayoutConstraint]()
         
@@ -152,8 +163,6 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         
         depositSettingsTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         view.addSubview(depositSettingsTableView)
-        
-        
     }
     
     

@@ -19,10 +19,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3jD-en-T2x"/>
+                    <connections>
+                        <segue destination="ypu-tI-nPT" kind="presentation" identifier="detailSegue" modalPresentationStyle="fullScreen" id="jKC-qC-CZy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE0-cx-rJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="844.92753623188412" y="88.392857142857139"/>
+        </scene>
+        <!--Confirm-->
+        <scene sceneID="O9O-6B-UIl">
+            <objects>
+                <viewController title="Confirm" id="ypu-tI-nPT" customClass="ConfirmationViewController" customModule="openDeposit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="klx-sr-tid">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3mp-jF-XJn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SoO-2K-LL7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWD-RE-Ywv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="88"/>
         </scene>
     </scenes>
     <resources>
