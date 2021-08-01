@@ -13,7 +13,6 @@
 		5A38369B26B5A2D9007EFB0C /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */; };
 		875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDF726B3CDF700B41A3D /* AppDelegate.swift */; };
 		875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */; };
-		875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEDFB26B3CDF700B41A3D /* ViewController.swift */; };
 		875CEDFF26B3CDF700B41A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875CEDFD26B3CDF700B41A3D /* Main.storyboard */; };
 		875CEE0126B3CDF900B41A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875CEE0026B3CDF900B41A3D /* Assets.xcassets */; };
 		875CEE0426B3CDF900B41A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1426B3D2F800B41A3D /* Conditions.swift */; };
 		875CEE1726B4269400B41A3D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1626B4269400B41A3D /* Currency.swift */; };
 		875CEE1926B4280700B41A3D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1826B4280700B41A3D /* Type.swift */; };
-		D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDB26B469D7009900E3 /* testForGit.swift */; };
-		D6DA4BDE26B46ABE009900E3 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDD26B46ABE009900E3 /* test2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +31,6 @@
 		875CEDF426B3CDF700B41A3D /* openDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875CEDF726B3CDF700B41A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		875CEDFB26B3CDF700B41A3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		875CEDFE26B3CDF700B41A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		875CEE0026B3CDF900B41A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		875CEE0326B3CDF900B41A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,8 +40,6 @@
 		875CEE1426B3D2F800B41A3D /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		875CEE1626B4269400B41A3D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		875CEE1826B4280700B41A3D /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
-		D6DA4BDB26B469D7009900E3 /* testForGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForGit.swift; sourceTree = "<group>"; };
-		D6DA4BDD26B46ABE009900E3 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,37 +53,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A38368E26B559DA007EFB0C /* Opening Deposit */ = {
-			isa = PBXGroup;
-			children = (
-				5A38369226B55B11007EFB0C /* View */,
-				5A38369126B55B01007EFB0C /* Controllers */,
-			);
-			path = "Opening Deposit";
-			sourceTree = "<group>";
-		};
-		5A38369126B55B01007EFB0C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */,
-				5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */,
-				5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		5A38369226B55B11007EFB0C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		875CEDEB26B3CDF700B41A3D = {
 			isa = PBXGroup;
 			children = (
-				D6DA4BDB26B469D7009900E3 /* testForGit.swift */,
 				875CEDF626B3CDF700B41A3D /* openDeposit */,
 				875CEDF526B3CDF700B41A3D /* Products */,
 			);
@@ -106,13 +72,11 @@
 		875CEDF626B3CDF700B41A3D /* openDeposit */ = {
 			isa = PBXGroup;
 			children = (
-				5A38368E26B559DA007EFB0C /* Opening Deposit */,
 				875CEE0B26B3CE0000B41A3D /* Models */,
 				875CEE0F26B3CE6600B41A3D /* Supporting Files */,
 				875CEE0E26B3CE2D00B41A3D /* Resources */,
 				875CEE0D26B3CE2100B41A3D /* Storyboards */,
 				875CEE0C26B3CE1400B41A3D /* View Controllers */,
-				D6DA4BDD26B46ABE009900E3 /* test2.swift */,
 			);
 			path = openDeposit;
 			sourceTree = "<group>";
@@ -132,7 +96,7 @@
 		875CEE0C26B3CE1400B41A3D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				875CEDFB26B3CDF700B41A3D /* ViewController.swift */,
+				87915A8026B67C16008575C8 /* InputConditions */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -142,6 +106,7 @@
 			children = (
 				875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */,
 				875CEDFD26B3CDF700B41A3D /* Main.storyboard */,
+				87915A8126B67C42008575C8 /* InputConditions */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -162,6 +127,24 @@
 				875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87915A8026B67C16008575C8 /* InputConditions */ = {
+			isa = PBXGroup;
+			children = (
+				5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */,
+				5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */,
+				5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */,
+			);
+			path = InputConditions;
+			sourceTree = "<group>";
+		};
+		87915A8126B67C42008575C8 /* InputConditions */ = {
+			isa = PBXGroup;
+			children = (
+				5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */,
+			);
+			path = InputConditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */,
-				D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */,
-				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
 				875CEE1326B3CF4F00B41A3D /* Product.swift in Sources */,
 				5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */,
@@ -246,7 +227,6 @@
 				875CEDFA26B3CDF700B41A3D /* SceneDelegate.swift in Sources */,
 				875CEE1726B4269400B41A3D /* Currency.swift in Sources */,
 				875CEE1526B3D2F800B41A3D /* Conditions.swift in Sources */,
-				D6DA4BDE26B46ABE009900E3 /* test2.swift in Sources */,
 				875CEE1926B4280700B41A3D /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
