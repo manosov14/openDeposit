@@ -27,6 +27,8 @@
 		875CEE1926B4280700B41A3D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CEE1826B4280700B41A3D /* Type.swift */; };
 		D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDB26B469D7009900E3 /* testForGit.swift */; };
 		D6DA4BDE26B46ABE009900E3 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4BDD26B46ABE009900E3 /* test2.swift */; };
+		D6DA4C3526B710A8009900E3 /* ConfirmOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4C3426B710A8009900E3 /* ConfirmOtpViewController.swift */; };
+		D6DA4C3826B714B0009900E3 /* ConfirmOtp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4C3726B714B0009900E3 /* ConfirmOtp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		875CEE1826B4280700B41A3D /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		D6DA4BDB26B469D7009900E3 /* testForGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForGit.swift; sourceTree = "<group>"; };
 		D6DA4BDD26B46ABE009900E3 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
+		D6DA4C3426B710A8009900E3 /* ConfirmOtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpViewController.swift; sourceTree = "<group>"; };
+		D6DA4C3726B714B0009900E3 /* ConfirmOtp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConfirmOtp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		5A38369126B55B01007EFB0C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6DA4C3626B71227009900E3 /* ConfirmOtp */,
 				5A286F2926B6CBF90087EF9D /* Confirmation */,
 				5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */,
 				5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */,
@@ -157,6 +162,7 @@
 		875CEE0D26B3CE2100B41A3D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D6DA4C3726B714B0009900E3 /* ConfirmOtp.storyboard */,
 				875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */,
 				875CEDFD26B3CDF700B41A3D /* Main.storyboard */,
 			);
@@ -179,6 +185,14 @@
 				875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6DA4C3626B71227009900E3 /* ConfirmOtp */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA4C3426B710A8009900E3 /* ConfirmOtpViewController.swift */,
+			);
+			path = ConfirmOtp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DA4C3826B714B0009900E3 /* ConfirmOtp.storyboard in Resources */,
 				5A38369B26B5A2D9007EFB0C /* MyTableViewCell.xib in Resources */,
 				875CEE0426B3CDF900B41A3D /* LaunchScreen.storyboard in Resources */,
 				5A286F2826B67FD20087EF9D /* FieldTableViewCell.xib in Resources */,
@@ -255,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A286F2D26B6CD230087EF9D /* ConfirmationViewController.swift in Sources */,
+				D6DA4C3526B710A8009900E3 /* ConfirmOtpViewController.swift in Sources */,
 				5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */,
 				D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */,
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,

@@ -38,10 +38,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="SoO-2K-LL7"/>
+                    <connections>
+                        <segue destination="Upt-rA-yPw" kind="show" id="MU3-wp-hA8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWD-RE-Ywv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1541" y="88"/>
+        </scene>
+        <!--ConfirmOtp-->
+        <scene sceneID="0Df-Kr-wD7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConfirmOtp" id="Upt-rA-yPw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vId-Nz-OJm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZv-VA-Fxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343" y="88"/>
         </scene>
     </scenes>
     <resources>

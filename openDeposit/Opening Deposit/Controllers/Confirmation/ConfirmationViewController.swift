@@ -27,15 +27,23 @@ class ConfirmationViewController: UIViewController, UITableViewDelegate, UITable
         continueButton.setTitle("Оформить вклад", for: .normal)
         continueButton.setTitleColor(.white, for: .normal)
         continueButton.layer.cornerRadius = 10
-        
+		continueButton.addTarget(self, action: #selector(continueButtonTaped), for: .touchUpInside)
         return continueButton
     }()
+	
+	@objc
+		private func continueButtonTaped() {
+			let storyboard = UIStoryboard(name: "ConfirmOtp", bundle: nil)
+			let confirmOtp = storyboard.instantiateViewController(withIdentifier: "ConfirmOtp")
+			confirmOtp.modalPresentationStyle = .fullScreen
+			self.present(confirmOtp, animated: true)
+		}
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         createTable()
-        
         view.addSubview(continueButton)
         
         addconstraints()
