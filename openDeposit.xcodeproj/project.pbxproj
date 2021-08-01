@@ -96,6 +96,7 @@
 		875CEE0C26B3CE1400B41A3D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8770EFE126B68BD100B8F9FF /* SelectProduct */,
 				87915A8026B67C16008575C8 /* InputConditions */,
 			);
 			path = "View Controllers";
@@ -106,6 +107,7 @@
 			children = (
 				875CEE0226B3CDF900B41A3D /* LaunchScreen.storyboard */,
 				875CEDFD26B3CDF700B41A3D /* Main.storyboard */,
+				8770EFE226B68C0B00B8F9FF /* SelectProduct */,
 				87915A8126B67C42008575C8 /* InputConditions */,
 			);
 			path = Storyboards;
@@ -127,6 +129,20 @@
 				875CEDF926B3CDF700B41A3D /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8770EFE126B68BD100B8F9FF /* SelectProduct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SelectProduct;
+			sourceTree = "<group>";
+		};
+		8770EFE226B68C0B00B8F9FF /* SelectProduct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SelectProduct;
 			sourceTree = "<group>";
 		};
 		87915A8026B67C16008575C8 /* InputConditions */ = {
