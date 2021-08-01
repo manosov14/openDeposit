@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A286F2726B67FD20087EF9D /* FieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A286F2526B67FD20087EF9D /* FieldTableViewCell.swift */; };
+		5A286F2826B67FD20087EF9D /* FieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A286F2626B67FD20087EF9D /* FieldTableViewCell.xib */; };
 		5A38369026B55AB4007EFB0C /* OpeningDepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */; };
 		5A38369726B575FB007EFB0C /* OpeningDepositViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */; };
 		5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A286F2526B67FD20087EF9D /* FieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTableViewCell.swift; sourceTree = "<group>"; };
+		5A286F2626B67FD20087EF9D /* FieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldTableViewCell.xib; sourceTree = "<group>"; };
 		5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDepositViewController.swift; sourceTree = "<group>"; };
 		5A38369626B575FB007EFB0C /* OpeningDepositViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OpeningDepositViewController.storyboard; sourceTree = "<group>"; };
 		5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				5A38368F26B55AB4007EFB0C /* OpeningDepositViewController.swift */,
 				5A38369826B5A2D9007EFB0C /* MyTableViewCell.swift */,
 				5A38369926B5A2D9007EFB0C /* MyTableViewCell.xib */,
+				5A286F2526B67FD20087EF9D /* FieldTableViewCell.swift */,
+				5A286F2626B67FD20087EF9D /* FieldTableViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			files = (
 				5A38369B26B5A2D9007EFB0C /* MyTableViewCell.xib in Resources */,
 				875CEE0426B3CDF900B41A3D /* LaunchScreen.storyboard in Resources */,
+				5A286F2826B67FD20087EF9D /* FieldTableViewCell.xib in Resources */,
 				5A38369726B575FB007EFB0C /* OpeningDepositViewController.storyboard in Resources */,
 				875CEE0126B3CDF900B41A3D /* Assets.xcassets in Resources */,
 				875CEDFF26B3CDF700B41A3D /* Main.storyboard in Resources */,
@@ -240,6 +247,7 @@
 				D6DA4BDC26B469D7009900E3 /* testForGit.swift in Sources */,
 				875CEDFC26B3CDF700B41A3D /* ViewController.swift in Sources */,
 				875CEDF826B3CDF700B41A3D /* AppDelegate.swift in Sources */,
+				5A286F2726B67FD20087EF9D /* FieldTableViewCell.swift in Sources */,
 				875CEE1326B3CF4F00B41A3D /* Product.swift in Sources */,
 				5A38369A26B5A2D9007EFB0C /* MyTableViewCell.swift in Sources */,
 				875CEE1126B3CF1E00B41A3D /* Client.swift in Sources */,

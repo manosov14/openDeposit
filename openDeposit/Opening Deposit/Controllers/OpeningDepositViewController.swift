@@ -18,6 +18,8 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     private let depositAmount = 0
     
     
+    
+    
     //Создаю кнопку и инкапсулирую ее внутренности
     private let continueButton: UIButton = {
         
@@ -47,8 +49,10 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         //Устанавливаю созданные ниже констрейнты для кнопки
         addconstraints()
         
-
-    }
+        
+        }
+    
+    
     
     //MARK:- Public methods
     
@@ -62,13 +66,17 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 3 {
+        if indexPath.row == 2 {
+            
+            let fieldCell = tableView.dequeueReusableCell(withIdentifier: FieldTableViewCell.identifier, for: indexPath) as! FieldTableViewCell
+            return fieldCell
+            
+        } else if indexPath.row == 3{
+            
             let customCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
-            
             customCell.confugure(value: 30, text: "дней")
-            
-            
             return customCell
+            
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
@@ -84,11 +92,6 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         case 1:
             content.text = Deposit.offer.currency.charCode
             content.secondaryText = "Валюта"
-            cell.contentConfiguration = content
-            return cell
-        case 2:
-            content.text = "\(Deposit.offer.conditions[0].sumTo)"
-            content.secondaryText = "Сумма вклада"
             cell.contentConfiguration = content
             return cell
         default:
@@ -111,11 +114,8 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        view.endEditing(true)
     }
-    
-
-    
-    
     
     //MARK: - Private methods
     
@@ -141,15 +141,19 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         depositSettingsTableView.backgroundColor = .white
         depositSettingsTableView.delegate = self
         depositSettingsTableView.dataSource = self
+        depositSettingsTableView.keyboardDismissMode = .onDrag
         
-        //подключаю свой xib
+        //подключаю свои xib-ы
         depositSettingsTableView.register(MyTableViewCell.nib(), forCellReuseIdentifier: MyTableViewCell.identifier)
+        depositSettingsTableView.register(FieldTableViewCell.nib(), forCellReuseIdentifier: FieldTableViewCell.identifier)
         
         //Маски (они растягивают таблицу)
         depositSettingsTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         depositSettingsTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         view.addSubview(depositSettingsTableView)
+        
+        
     }
     
     
