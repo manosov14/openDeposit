@@ -9,13 +9,15 @@ import UIKit
 
 class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var depositSum = ""
+    var depositDays = ""
+    
     //MARK: - Private properties
     
     //Создаю таблицу
     private var depositSettingsTableView = UITableView()
     private let cellID = "defaultCell"
     private let depositAmount = 0
-    
     
     //Создаю кнопку и инкапсулирую ее внутренности
     private let continueButton: UIButton = {
@@ -53,7 +55,8 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         guard let dvc = segue.destination as? ConfirmationViewController else { return }
         dvc.nameOfDeposit = "\(Deposit.offer.offerName)"
         dvc.currency = "\(Deposit.offer.currency.charCode)"
-
+        dvc.sumOfDeposit = depositSum
+        dvc.depositTerb = depositDays
         dvc.procent = "5"
     }
     
@@ -76,12 +79,14 @@ class OpeningDepositViewController: UIViewController, UITableViewDelegate, UITab
         if indexPath.row == 2 {
             
             let fieldCell = tableView.dequeueReusableCell(withIdentifier: FieldTableViewCell.identifier, for: indexPath) as! FieldTableViewCell
+            depositDays = fieldCell.textForDrop
             return fieldCell
             
         } else if indexPath.row == 3{
             
             let customCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
             customCell.confugure(value: 30, text: "дней")
+            depositSum = customCell.textForDrop
             
             return customCell
             

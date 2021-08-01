@@ -11,7 +11,7 @@ class MyTableViewCell: UITableViewCell {
     
     static let tableCell = MyTableViewCell()
     
-    var textForDrop = "Not Found"
+    var textForDrop = "10000"
     
     static let identifier = "MyTableViewCell"
     static func nib() -> UINib {

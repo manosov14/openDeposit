@@ -16,7 +16,7 @@ class FieldTableViewCell: UITableViewCell, UITextFieldDelegate {
         return UINib(nibName: "FieldTableViewCell", bundle: nil)
     }
     
-    var textForDrop = "NF"
+    var textForDrop = "10 дней"
     
     @IBOutlet var field: UITextField!
 
